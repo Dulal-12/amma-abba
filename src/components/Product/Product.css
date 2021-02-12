@@ -1,0 +1,15 @@
+.product{
+    display : flex;
+    border-bottom : 1px solid green;
+    margin-bottom : 5px;
+    margin-right: 5px;;
+    padding : 10px;
+}
+
+.main-btn{
+    width : 150px;
+    height : 30px;
+    background-color : goldenrod;
+    border : 1px solid green;
+    border-radius : 5px;
+}
