@@ -3,7 +3,10 @@
 }
 
 .product-container{
-    width : 70%;
+    width : 80%;
     margin-left : 20px;
     border-right: 1px solid green;
+}
+.cart-container{
+    margin-left : 20px;
 }
