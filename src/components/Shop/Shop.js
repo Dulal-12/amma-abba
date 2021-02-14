@@ -3,7 +3,7 @@ import fakeData from '../../fakeData';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
-
+import {addToDatabaseCart} from '../../utilities/databaseManager';
 const Shop = () => {
         
     const first20 = fakeData.slice(0,20);
@@ -14,6 +14,9 @@ const Shop = () => {
       
         const newProduct = [...sProduct , product];
         setSProduct(newProduct);
+        const sameProduct = sProduct.filter(pd => pd.key === product.key);
+        const count = sameProduct.length
+        addToDatabaseCart(product.key , count+1)
     }
 
     return (
