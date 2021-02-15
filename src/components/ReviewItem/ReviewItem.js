@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReviewItem = ({product}) => {
+const ReviewItem = ({product ,handleRemoveProduct}) => {
     const { name, img, stock, seller, price , key , quantity } = product;
     return (
         <div className="product">
@@ -13,7 +13,7 @@ const ReviewItem = ({product}) => {
                 <p><small>Only {stock} is available.Order soon....</small></p>
                 <p><small>${price}</small>   </p>
                 <p>Quantity : {quantity}</p>
-                <button className = "main-btn">Remove</button>
+                <button className = "main-btn" onClick = {()=> handleRemoveProduct(product)}>Remove</button>
         </div>
         </div>
     );
